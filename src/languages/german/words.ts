@@ -1,5 +1,6 @@
 import { Word } from '../types';
 
+// TODO: extract types to separate file
 export type GermanGender = 'masculine' | 'feminine' | 'neuter';
 export type GermanWord = Word<GermanGender>;
 
@@ -24,7 +25,7 @@ export const articles: Articles = {
     },
 };
 
-// TODO: Add multiple levels of words
+// TODO: Add multiple levels of words (e.g. simple, medium, hard)
 export const words: GermanWord[] = [
     {
         noun: 'Mann',
@@ -32,6 +33,7 @@ export const words: GermanWord[] = [
         meaning: 'man',
         plural: 'Männer',
         category: 'person',
+        // TODO: dativePlural: 'Männern'
     },
     {
         noun: 'Frau',

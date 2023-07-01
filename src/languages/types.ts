@@ -10,6 +10,7 @@ export type Category =
     | 'object';
 
 export type Word<Genders extends string> = {
+    // TODO: replace with word or singular
     noun: string;
     gender: Genders;
     meaning: string;

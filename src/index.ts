@@ -7,6 +7,7 @@ import { sentences } from './languages/german/sentences.js';
 const rl = createInterface({
     input: process.stdin,
     output: process.stdout,
+    historySize: 0,
 });
 
 async function main() {
@@ -33,6 +34,7 @@ async function main() {
 
         // Compare the use input with the solution
         if (answer.trim() === solution) {
+            // TODO: add colors
             console.log('Great job!');
         } else {
             // Print the correct solution if it is wrong
