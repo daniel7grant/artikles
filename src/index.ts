@@ -1,7 +1,8 @@
 import pluralize from 'pluralize';
 import { createInterface } from 'node:readline/promises';
-import { words, articles, pluralities, cases } from './languages/german/words.js';
+import { words, articles, pluralities } from './languages/german/words.js';
 import { getRandomItem, getRandomItemWithWeights } from './utils.js';
+import { sentences } from './languages/german/sentences.js';
 
 const rl = createInterface({
     input: process.stdin,
@@ -10,30 +11,48 @@ const rl = createInterface({
 
 async function main() {
     while (true) {
-        const word = getRandomItem(words);
+        // Get a random sentence (add more weight to the simple case)
+        const { sentence, meaning, categories, type } = getRandomItemWithWeights(sentences, [4]);
+
+        // Get a random word and plurality to generate the conjugation
+        const word = getRandomItem(words.filter((w) => categories.includes(w.category)));
         const plurality = getRandomItemWithWeights(pluralities, [3, 1]);
-        const randomCase = getRandomItemWithWeights(cases, [2, 1, 1]);
 
-        const question = plurality === 'singular' ? word.noun : word.plural;
-        const meaning = plurality === 'singular' ? word.meaning : pluralize.plural(word.meaning);
-        const solution = articles[plurality][word.gender][randomCase];
+        // Put together parameters for the sentence and meaning creation
+        const isPlural = plurality === 'plural';
+        const noun = !isPlural ? word.noun : word.plural;
+        const translation = !isPlural ? word.meaning : pluralize.plural(word.meaning);
 
-        const answer = await rl.question(`${randomCase}: ___ ${question} (${meaning}) `);
-        if (answer === solution) {
+        // Generate the question and the solution
+        const questionSentence = sentence({ isPlural, noun });
+        const translationSentence = meaning({ isPlural, noun: translation });
+        const solution = articles[plurality][word.gender][type];
+
+        // Read the user input
+        const answer = await rl.question(`${questionSentence} (${translationSentence}) `);
+
+        // Compare the use input with the solution
+        if (answer.trim() === solution) {
             console.log('Great job!');
         } else {
-            const explanation = [`No it's ${solution} ${question}.`];
-            if (randomCase !== 'nominative') {
-                if (plurality === 'plural') {
-                    const pluralNominative = articles.plural[word.gender].nominative;
-                    explanation.push(`Plural form is ${pluralNominative} ${word.plural}.`);
-                }
+            // Print the correct solution if it is wrong
+            const solutionSentence = sentence({ isPlural, noun, solution });
+            const explanationSentence = `No, the solution is "${solutionSentence}".`;
 
-                const nominative = articles.singular[word.gender].nominative;
-                explanation.push(`Nominative form is ${nominative} ${word.noun} (${word.gender}).`);
+            // Add more information for the cases
+            // For example: den Menschen (dative) -> die Menschen (plural) -> der Mensch (masculine)
+            const detailedExplanation = [
+                `${solution} ${noun} (${type === 'nominative' ? word.gender : type})`,
+            ];
+            if (isPlural) {
+                const pluralNominative = articles.plural[word.gender].nominative;
+                detailedExplanation.push(`${pluralNominative} ${word.plural} (plural)`);
             }
-
-            console.log(explanation.join(' '));
+            if (type !== 'nominative') {
+                const nominative = articles.singular[word.gender].nominative;
+                detailedExplanation.push(`${nominative} ${word.noun} (${word.gender})`);
+            }
+            console.log(`${explanationSentence}\n  ${detailedExplanation.join(' -> ')}`);
         }
     }
 }
