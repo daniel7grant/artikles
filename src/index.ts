@@ -55,6 +55,8 @@ async function main() {
                 detailedExplanation.push(`${nominative} ${word.noun} (${word.gender})`);
             }
             console.log(`${explanationSentence}\n  ${detailedExplanation.join(' -> ')}`);
+
+            // TODO: add hints for usual cases (e.g. das for -chen)
         }
     }
 }
