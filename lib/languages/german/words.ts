@@ -1,4 +1,4 @@
-import { Word } from '../types';
+import { Word } from '../types.ts';
 
 // TODO: extract types to separate file
 export type GermanGender = 'masculine' | 'feminine' | 'neuter';
@@ -9,7 +9,10 @@ export type GermanPluralities = (typeof pluralities)[number];
 export const cases = ['nominative', 'accusative', 'dative'] as const;
 export type GermanCases = (typeof cases)[number];
 
-type Articles = Record<GermanPluralities, Record<GermanGender, Record<GermanCases, string>>>;
+type Articles = Record<
+    GermanPluralities,
+    Record<GermanGender, Record<GermanCases, string>>
+>;
 
 // TODO: add indefinite articles
 export const articles: Articles = {

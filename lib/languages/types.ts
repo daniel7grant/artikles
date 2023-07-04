@@ -24,7 +24,7 @@ export type SentenceParams = {
     solution?: string;
 };
 
-export type Sentence<T extends String> = {
+export type Sentence<T extends string> = {
     type: T;
     categories: Category[];
     sentence: (s: SentenceParams) => string;

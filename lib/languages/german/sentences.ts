@@ -1,18 +1,37 @@
-import { Sentence } from '../types';
-import { GermanCases } from './words';
+import { Sentence } from '../types.ts';
+import { GermanCases } from './words.ts';
 
 export const sentences: Sentence<GermanCases>[] = [
     {
         type: 'nominative',
-        categories: ['animal', 'bodypart', 'food', 'object', 'person', 'place', 'time', 'vehicle'],
+        categories: [
+            'animal',
+            'bodypart',
+            'food',
+            'object',
+            'person',
+            'place',
+            'time',
+            'vehicle',
+        ],
         sentence: ({ noun, solution = '___' }) => `${solution} ${noun}`,
         meaning: ({ noun }) => `the ${noun}`,
     },
     {
         type: 'nominative',
-        categories: ['animal', 'bodypart', 'food', 'object', 'person', 'place', 'vehicle'],
-        sentence: ({ isPlural, noun, solution = '___' }) => `Hier ${isPlural ? 'sind' : 'ist'} ${solution} ${noun}`,
-        meaning: ({ isPlural, noun }) => `Here ${isPlural ? 'are' : 'is'} the ${noun}`,
+        categories: [
+            'animal',
+            'bodypart',
+            'food',
+            'object',
+            'person',
+            'place',
+            'vehicle',
+        ],
+        sentence: ({ isPlural, noun, solution = '___' }) =>
+            `Hier ${isPlural ? 'sind' : 'ist'} ${solution} ${noun}`,
+        meaning: ({ isPlural, noun }) =>
+            `Here ${isPlural ? 'are' : 'is'} the ${noun}`,
     },
     {
         type: 'accusative',
@@ -38,13 +57,15 @@ export const sentences: Sentence<GermanCases>[] = [
     {
         type: 'accusative',
         categories: ['food'],
-        sentence: ({ noun, solution = '___' }) => `Ich nehme ${solution} ${noun}`,
+        sentence: ({ noun, solution = '___' }) =>
+            `Ich nehme ${solution} ${noun}`,
         meaning: ({ noun }) => `I take the ${noun}`,
     },
     {
         type: 'dative',
         categories: ['animal', 'person'],
-        sentence: ({ noun, solution = '___' }) => `Ich gebe ${solution} ${noun} Wasser`,
+        sentence: ({ noun, solution = '___' }) =>
+            `Ich gebe ${solution} ${noun} Wasser`,
         meaning: ({ noun }) => `I give the ${noun} water`,
     },
 ];
