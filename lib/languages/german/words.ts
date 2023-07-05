@@ -31,6 +31,7 @@ export const articles: Articles = {
 // TODO: Add multiple levels of words (e.g. simple, medium, hard)
 export const words: GermanWord[] = [
     {
+        id: 'mann',
         noun: 'Mann',
         gender: 'masculine',
         meaning: 'man',
@@ -39,6 +40,7 @@ export const words: GermanWord[] = [
         // TODO: dativePlural: 'Männern'
     },
     {
+        id: 'frau',
         noun: 'Frau',
         gender: 'feminine',
         meaning: 'woman',
@@ -46,6 +48,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'kind',
         noun: 'Kind',
         gender: 'neuter',
         meaning: 'child',
@@ -53,6 +56,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'haus',
         noun: 'Haus',
         gender: 'neuter',
         meaning: 'house',
@@ -60,6 +64,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'zeit',
         noun: 'Zeit',
         gender: 'feminine',
         meaning: 'time',
@@ -67,6 +72,7 @@ export const words: GermanWord[] = [
         category: 'concept',
     },
     {
+        id: 'tag',
         noun: 'Tag',
         gender: 'masculine',
         meaning: 'day',
@@ -74,6 +80,7 @@ export const words: GermanWord[] = [
         category: 'time',
     },
     {
+        id: 'jahr',
         noun: 'Jahr',
         gender: 'neuter',
         meaning: 'year',
@@ -81,6 +88,7 @@ export const words: GermanWord[] = [
         category: 'time',
     },
     {
+        id: 'stadt',
         noun: 'Stadt',
         gender: 'feminine',
         meaning: 'city',
@@ -88,6 +96,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'land',
         noun: 'Land',
         gender: 'neuter',
         meaning: 'country',
@@ -95,6 +104,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'leben',
         noun: 'Leben',
         gender: 'neuter',
         meaning: 'life',
@@ -102,6 +112,7 @@ export const words: GermanWord[] = [
         category: 'concept',
     },
     {
+        id: 'mensch',
         noun: 'Mensch',
         gender: 'masculine',
         meaning: 'human',
@@ -109,6 +120,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'weg',
         noun: 'Weg',
         gender: 'masculine',
         meaning: 'way',
@@ -116,6 +128,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'ort',
         noun: 'Ort',
         gender: 'masculine',
         meaning: 'place',
@@ -123,6 +136,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'buch',
         noun: 'Buch',
         gender: 'neuter',
         meaning: 'book',
@@ -130,6 +144,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'wasser',
         noun: 'Wasser',
         gender: 'neuter',
         meaning: 'water',
@@ -137,6 +152,7 @@ export const words: GermanWord[] = [
         category: 'food',
     },
     {
+        id: 'stunde',
         noun: 'Stunde',
         gender: 'feminine',
         meaning: 'hour',
@@ -144,6 +160,7 @@ export const words: GermanWord[] = [
         category: 'time',
     },
     {
+        id: 'schule',
         noun: 'Schule',
         gender: 'feminine',
         meaning: 'school',
@@ -151,6 +168,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'arbeit',
         noun: 'Arbeit',
         gender: 'feminine',
         meaning: 'work',
@@ -158,6 +176,7 @@ export const words: GermanWord[] = [
         category: 'concept',
     },
     {
+        id: 'geld',
         noun: 'Geld',
         gender: 'neuter',
         meaning: 'money',
@@ -165,6 +184,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'stück',
         noun: 'Stück',
         gender: 'neuter',
         meaning: 'piece',
@@ -172,6 +192,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'problem',
         noun: 'Problem',
         gender: 'neuter',
         meaning: 'problem',
@@ -179,6 +200,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'wort',
         noun: 'Wort',
         gender: 'neuter',
         meaning: 'word',
@@ -186,6 +208,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'mädchen',
         noun: 'Mädchen',
         gender: 'neuter',
         meaning: 'girl',
@@ -193,6 +216,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'junge',
         noun: 'Junge',
         gender: 'masculine',
         meaning: 'boy',
@@ -200,6 +224,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'welt',
         noun: 'Welt',
         gender: 'feminine',
         meaning: 'world',
@@ -207,6 +232,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'familie',
         noun: 'Familie',
         gender: 'feminine',
         meaning: 'family',
@@ -214,6 +240,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'morgen',
         noun: 'Morgen',
         gender: 'masculine',
         meaning: 'morning',
@@ -221,6 +248,7 @@ export const words: GermanWord[] = [
         category: 'time',
     },
     {
+        id: 'abend',
         noun: 'Abend',
         gender: 'masculine',
         meaning: 'evening',
@@ -228,6 +256,7 @@ export const words: GermanWord[] = [
         category: 'time',
     },
     {
+        id: 'freund',
         noun: 'Freund',
         gender: 'masculine',
         meaning: 'friend',
@@ -235,6 +264,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'mutter',
         noun: 'Mutter',
         gender: 'feminine',
         meaning: 'mother',
@@ -242,6 +272,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'vater',
         noun: 'Vater',
         gender: 'masculine',
         meaning: 'father',
@@ -249,6 +280,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'geschichte',
         noun: 'Geschichte',
         gender: 'feminine',
         meaning: 'history',
@@ -256,6 +288,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'sohn',
         noun: 'Sohn',
         gender: 'masculine',
         meaning: 'son',
@@ -263,6 +296,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'tochter',
         noun: 'Tochter',
         gender: 'feminine',
         meaning: 'daughter',
@@ -270,6 +304,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'bruder',
         noun: 'Bruder',
         gender: 'masculine',
         meaning: 'brother',
@@ -277,6 +312,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'schwester',
         noun: 'Schwester',
         gender: 'feminine',
         meaning: 'sister',
@@ -284,6 +320,7 @@ export const words: GermanWord[] = [
         category: 'person',
     },
     {
+        id: 'himmel',
         noun: 'Himmel',
         gender: 'masculine',
         meaning: 'sky',
@@ -291,6 +328,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'berg',
         noun: 'Berg',
         gender: 'masculine',
         meaning: 'mountain',
@@ -298,6 +336,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'boden',
         noun: 'Boden',
         gender: 'masculine',
         meaning: 'ground',
@@ -305,6 +344,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'wald',
         noun: 'Wald',
         gender: 'masculine',
         meaning: 'forest',
@@ -312,6 +352,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'baum',
         noun: 'Baum',
         gender: 'masculine',
         meaning: 'tree',
@@ -319,6 +360,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'blume',
         noun: 'Blume',
         gender: 'feminine',
         meaning: 'flower',
@@ -326,6 +368,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'haus',
         noun: 'Haus',
         gender: 'neuter',
         meaning: 'home',
@@ -333,6 +376,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'zimmer',
         noun: 'Zimmer',
         gender: 'neuter',
         meaning: 'room',
@@ -340,6 +384,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'tür',
         noun: 'Tür',
         gender: 'feminine',
         meaning: 'door',
@@ -347,6 +392,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'fenster',
         noun: 'Fenster',
         gender: 'neuter',
         meaning: 'window',
@@ -354,6 +400,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'stuhl',
         noun: 'Stuhl',
         gender: 'masculine',
         meaning: 'chair',
@@ -361,6 +408,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'tisch',
         noun: 'Tisch',
         gender: 'masculine',
         meaning: 'table',
@@ -368,6 +416,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'bett',
         noun: 'Bett',
         gender: 'neuter',
         meaning: 'bed',
@@ -375,6 +424,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'hund',
         noun: 'Hund',
         gender: 'masculine',
         meaning: 'dog',
@@ -382,6 +432,7 @@ export const words: GermanWord[] = [
         category: 'animal',
     },
     {
+        id: 'katze',
         noun: 'Katze',
         gender: 'feminine',
         meaning: 'cat',
@@ -389,6 +440,7 @@ export const words: GermanWord[] = [
         category: 'animal',
     },
     {
+        id: 'vogel',
         noun: 'Vogel',
         gender: 'masculine',
         meaning: 'bird',
@@ -396,6 +448,7 @@ export const words: GermanWord[] = [
         category: 'animal',
     },
     {
+        id: 'fisch',
         noun: 'Fisch',
         gender: 'masculine',
         meaning: 'fish',
@@ -403,6 +456,7 @@ export const words: GermanWord[] = [
         category: 'animal',
     },
     {
+        id: 'kuh',
         noun: 'Kuh',
         gender: 'feminine',
         meaning: 'cow',
@@ -410,6 +464,7 @@ export const words: GermanWord[] = [
         category: 'animal',
     },
     {
+        id: 'pferd',
         noun: 'Pferd',
         gender: 'neuter',
         meaning: 'horse',
@@ -417,6 +472,7 @@ export const words: GermanWord[] = [
         category: 'animal',
     },
     {
+        id: 'schwein',
         noun: 'Schwein',
         gender: 'neuter',
         meaning: 'pig',
@@ -424,6 +480,7 @@ export const words: GermanWord[] = [
         category: 'animal',
     },
     {
+        id: 'auto',
         noun: 'Auto',
         gender: 'neuter',
         meaning: 'car',
@@ -431,6 +488,7 @@ export const words: GermanWord[] = [
         category: 'vehicle',
     },
     {
+        id: 'flugzeug',
         noun: 'Flugzeug',
         gender: 'neuter',
         meaning: 'airplane',
@@ -438,6 +496,7 @@ export const words: GermanWord[] = [
         category: 'vehicle',
     },
     {
+        id: 'schiff',
         noun: 'Schiff',
         gender: 'neuter',
         meaning: 'ship',
@@ -445,6 +504,7 @@ export const words: GermanWord[] = [
         category: 'vehicle',
     },
     {
+        id: 'zug',
         noun: 'Zug',
         gender: 'masculine',
         meaning: 'train',
@@ -452,6 +512,7 @@ export const words: GermanWord[] = [
         category: 'vehicle',
     },
     {
+        id: 'bus',
         noun: 'Bus',
         gender: 'masculine',
         meaning: 'bus',
@@ -459,6 +520,7 @@ export const words: GermanWord[] = [
         category: 'vehicle',
     },
     {
+        id: 'rad',
         noun: 'Rad',
         gender: 'neuter',
         meaning: 'wheel',
@@ -466,6 +528,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'uhr',
         noun: 'Uhr',
         gender: 'feminine',
         meaning: 'clock',
@@ -473,6 +536,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'telefon',
         noun: 'Telefon',
         gender: 'neuter',
         meaning: 'telephone',
@@ -480,6 +544,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'computer',
         noun: 'Computer',
         gender: 'masculine',
         meaning: 'computer',
@@ -487,6 +552,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'fernseher',
         noun: 'Fernseher',
         gender: 'masculine',
         meaning: 'television',
@@ -494,6 +560,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'buch',
         noun: 'Buch',
         gender: 'neuter',
         meaning: 'book',
@@ -501,6 +568,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'heft',
         noun: 'Heft',
         gender: 'neuter',
         meaning: 'notebook',
@@ -508,6 +576,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'stift',
         noun: 'Stift',
         gender: 'masculine',
         meaning: 'pen',
@@ -515,6 +584,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'bleistift',
         noun: 'Bleistift',
         gender: 'masculine',
         meaning: 'pencil',
@@ -522,6 +592,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'farbe',
         noun: 'Farbe',
         gender: 'feminine',
         meaning: 'color',
@@ -529,6 +600,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'gesicht',
         noun: 'Gesicht',
         gender: 'neuter',
         meaning: 'face',
@@ -536,6 +608,7 @@ export const words: GermanWord[] = [
         category: 'bodypart',
     },
     {
+        id: 'auge',
         noun: 'Auge',
         gender: 'neuter',
         meaning: 'eye',
@@ -543,6 +616,7 @@ export const words: GermanWord[] = [
         category: 'bodypart',
     },
     {
+        id: 'nase',
         noun: 'Nase',
         gender: 'feminine',
         meaning: 'nose',
@@ -550,6 +624,7 @@ export const words: GermanWord[] = [
         category: 'bodypart',
     },
     {
+        id: 'mund',
         noun: 'Mund',
         gender: 'masculine',
         meaning: 'mouth',
@@ -557,6 +632,7 @@ export const words: GermanWord[] = [
         category: 'bodypart',
     },
     {
+        id: 'ohr',
         noun: 'Ohr',
         gender: 'neuter',
         meaning: 'ear',
@@ -564,6 +640,7 @@ export const words: GermanWord[] = [
         category: 'bodypart',
     },
     {
+        id: 'hand',
         noun: 'Hand',
         gender: 'feminine',
         meaning: 'hand',
@@ -571,6 +648,7 @@ export const words: GermanWord[] = [
         category: 'bodypart',
     },
     {
+        id: 'fuß',
         noun: 'Fuß',
         gender: 'masculine',
         meaning: 'foot',
@@ -578,6 +656,7 @@ export const words: GermanWord[] = [
         category: 'bodypart',
     },
     {
+        id: 'bein',
         noun: 'Bein',
         gender: 'neuter',
         meaning: 'leg',
@@ -585,6 +664,7 @@ export const words: GermanWord[] = [
         category: 'bodypart',
     },
     {
+        id: 'kopf',
         noun: 'Kopf',
         gender: 'masculine',
         meaning: 'head',
@@ -592,6 +672,7 @@ export const words: GermanWord[] = [
         category: 'bodypart',
     },
     {
+        id: 'herz',
         noun: 'Herz',
         gender: 'neuter',
         meaning: 'heart',
@@ -599,6 +680,7 @@ export const words: GermanWord[] = [
         category: 'bodypart',
     },
     {
+        id: 'see',
         noun: 'See',
         gender: 'masculine',
         meaning: 'lake',
@@ -606,6 +688,7 @@ export const words: GermanWord[] = [
         category: 'bodypart',
     },
     {
+        id: 'fluss',
         noun: 'Fluss',
         gender: 'masculine',
         meaning: 'river',
@@ -613,6 +696,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'meer',
         noun: 'Meer',
         gender: 'neuter',
         meaning: 'sea',
@@ -620,6 +704,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'strand',
         noun: 'Strand',
         gender: 'masculine',
         meaning: 'beach',
@@ -627,6 +712,7 @@ export const words: GermanWord[] = [
         category: 'place',
     },
     {
+        id: 'sonne',
         noun: 'Sonne',
         gender: 'feminine',
         meaning: 'sun',
@@ -634,6 +720,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'mond',
         noun: 'Mond',
         gender: 'masculine',
         meaning: 'moon',
@@ -641,6 +728,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'stern',
         noun: 'Stern',
         gender: 'masculine',
         meaning: 'star',
@@ -648,6 +736,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'feuer',
         noun: 'Feuer',
         gender: 'neuter',
         meaning: 'fire',
@@ -655,6 +744,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'luft',
         noun: 'Luft',
         gender: 'feminine',
         meaning: 'air',
@@ -662,6 +752,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'erde',
         noun: 'Erde',
         gender: 'feminine',
         meaning: 'earth',
@@ -669,6 +760,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'stein',
         noun: 'Stein',
         gender: 'masculine',
         meaning: 'stone',
@@ -676,6 +768,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'sand',
         noun: 'Sand',
         gender: 'masculine',
         meaning: 'sand',
@@ -683,6 +776,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'glas',
         noun: 'Glas',
         gender: 'neuter',
         meaning: 'glass',
@@ -690,6 +784,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'holz',
         noun: 'Holz',
         gender: 'neuter',
         meaning: 'wood',
@@ -697,6 +792,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'metall',
         noun: 'Metall',
         gender: 'neuter',
         meaning: 'metal',
@@ -704,6 +800,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'stahl',
         noun: 'Stahl',
         gender: 'masculine',
         meaning: 'steel',
@@ -711,6 +808,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'gold',
         noun: 'Gold',
         gender: 'neuter',
         meaning: 'gold',
@@ -718,6 +816,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'silber',
         noun: 'Silber',
         gender: 'neuter',
         meaning: 'silver',
@@ -725,6 +824,7 @@ export const words: GermanWord[] = [
         category: 'object',
     },
     {
+        id: 'essen',
         noun: 'Essen',
         gender: 'neuter',
         meaning: 'food',
@@ -732,6 +832,7 @@ export const words: GermanWord[] = [
         category: 'food',
     },
     {
+        id: 'getränk',
         noun: 'Getränk',
         gender: 'neuter',
         meaning: 'drink',
@@ -739,6 +840,7 @@ export const words: GermanWord[] = [
         category: 'food',
     },
     {
+        id: 'schlaf',
         noun: 'Schlaf',
         gender: 'masculine',
         meaning: 'sleep',
@@ -746,6 +848,7 @@ export const words: GermanWord[] = [
         category: 'concept',
     },
     {
+        id: 'traum',
         noun: 'Traum',
         gender: 'masculine',
         meaning: 'dream',
@@ -753,6 +856,7 @@ export const words: GermanWord[] = [
         category: 'concept',
     },
     {
+        id: 'leben',
         noun: 'Leben',
         gender: 'neuter',
         meaning: 'life',
@@ -760,6 +864,7 @@ export const words: GermanWord[] = [
         category: 'concept',
     },
     {
+        id: 'tod',
         noun: 'Tod',
         gender: 'masculine',
         meaning: 'death',
@@ -767,6 +872,7 @@ export const words: GermanWord[] = [
         category: 'concept',
     },
     {
+        id: 'liebe',
         noun: 'Liebe',
         gender: 'feminine',
         meaning: 'love',

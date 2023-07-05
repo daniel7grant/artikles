@@ -3,13 +3,13 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $0 from './routes/index.tsx';
-import * as $1 from './routes/word/[name].tsx';
+import * as $1 from './routes/word/[sentenceId]/[wordId].tsx';
 import * as $$0 from './islands/RandomizedButton.tsx';
 
 const manifest = {
     routes: {
         './routes/index.tsx': $0,
-        './routes/word/[name].tsx': $1,
+        './routes/word/[sentenceId]/[wordId].tsx': $1,
     },
     islands: {
         './islands/RandomizedButton.tsx': $$0,

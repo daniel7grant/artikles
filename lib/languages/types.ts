@@ -11,6 +11,7 @@ export type Category =
 
 export type Word<Genders extends string> = {
     // TODO: replace with word or singular
+    id: string;
     noun: string;
     gender: Genders;
     meaning: string;
@@ -25,6 +26,7 @@ export type SentenceParams = {
 };
 
 export type Sentence<T extends string> = {
+    id: string;
     type: T;
     categories: Category[];
     sentence: (s: SentenceParams) => string;
