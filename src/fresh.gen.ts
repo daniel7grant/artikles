@@ -4,13 +4,16 @@
 
 import * as $0 from './routes/index.tsx';
 import * as $1 from './routes/word/[name].tsx';
+import * as $$0 from './islands/RandomizedButton.tsx';
 
 const manifest = {
     routes: {
         './routes/index.tsx': $0,
         './routes/word/[name].tsx': $1,
     },
-    islands: {},
+    islands: {
+        './islands/RandomizedButton.tsx': $$0,
+    },
     baseUrl: import.meta.url,
 };
 
