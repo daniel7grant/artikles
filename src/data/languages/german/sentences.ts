@@ -18,7 +18,7 @@ export const sentences: Sentence<GermanCases>[] = [
         meaning: ({ isPlural, noun }) => `Here ${isPlural ? 'are' : 'is'} the ${noun}`,
     },
     {
-        id: '',
+        id: 'gib',
         type: 'accusative',
         categories: ['food'],
         sentence: ({ noun, solution = '___' }) => `Gib mir ${solution} ${noun}`,

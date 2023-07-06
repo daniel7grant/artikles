@@ -4,7 +4,8 @@
 
 import * as $0 from './routes/index.tsx';
 import * as $1 from './routes/word/[sentenceId]/[wordId].tsx';
-import * as $$0 from './islands/RandomizedButton.tsx';
+import * as $$0 from './islands/InputMask.tsx';
+import * as $$1 from './islands/RandomizedButton.tsx';
 
 const manifest = {
     routes: {
@@ -12,7 +13,8 @@ const manifest = {
         './routes/word/[sentenceId]/[wordId].tsx': $1,
     },
     islands: {
-        './islands/RandomizedButton.tsx': $$0,
+        './islands/InputMask.tsx': $$0,
+        './islands/RandomizedButton.tsx': $$1,
     },
     baseUrl: import.meta.url,
 };
