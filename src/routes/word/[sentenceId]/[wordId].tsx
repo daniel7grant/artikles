@@ -35,7 +35,7 @@ export const handler: Handlers<ShowQuestionPageProps | null> = {
     },
     async POST(req, ctx) {
         const form = await req.formData();
-        const answer = form.get('article')?.toString().trim();
+        const answer = form.get('article')?.toString().trim().toLocaleLowerCase();
 
         const { wordId, sentenceId } = ctx.params;
         const word = words.find((w) => w.id === wordId);
